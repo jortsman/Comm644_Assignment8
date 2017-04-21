@@ -40,4 +40,29 @@ $(function() {
     $('#panel2').addClass('hide');
     $('#panel3').removeClass('hide');
   });
+  // Accordian
+  $('#accordion h3:first-child').on('click', function() {
+    $('#accordion h3:first-child').addClass('active');
+    $('#accordion h3:nth-child(2)').removeClass('active');
+    $('#accordion h3:nth-child(3)').removeClass('active');
+    $('#acPanel1Contents').removeClass('hide');
+    $('#acPanel2Contents').addClass('hide');
+    $('#acPanel3Contents').addClass('hide');
+  });
+  $('#accordion h3:nth-child(2)').on('click', function() {
+    $('#accordion h3:first-child').removeClass('active');
+    $('#accordion h3:nth-child(2)').addClass('active');
+    $('#accordion h3:nth-child(3)').removeClass('active');
+    $('#acPanel1Contents').addClass('hide');
+    $('#acPanel2Contents').removeClass('hide');
+    $('#acPanel3Contents').addClass('hide');
+  });
+  $('#accordion h3:nth-child(3)').on('click', function() {
+    $('#accordion h3:first-child').removeClass('active');
+    $('#accordion h3:nth-child(2)').removeClass('active');
+    $('#accordion h3:nth-child(3)').addClass('active');
+    $('#acPanel1Contents').addClass('hide');
+    $('#acPanel2Contents').addClass('hide');
+    $('#acPanel3Contents').removeClass('hide');
+  });
 });
