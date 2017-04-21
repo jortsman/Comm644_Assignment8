@@ -32,6 +32,38 @@
     .break {
       margin-bottom: 30px;
     }
+    #tabs {
+      background-color: #ccc;
+      padding: 5px 10px 20px 10px;
+      box-sizing: border-box;
+      min-height: 350px;
+      width: 600px;
+    }
+    #tabs ul {
+      margin-bottom: 3px;
+      padding: 0px;
+    }
+    #tabs ul li {
+      display: inline-block;
+      background-color: #ddd;
+      padding: 10px 20px;
+      border-radius: 3px 3px 0px 0px;
+    }
+    #tabs ul li:not(:first-child) {
+      margin-left: 10px;
+    }
+    #tabs .active {
+      background-color: #3498DB;
+      color: white;
+    }
+    #panel1, #panel2, #panel3 {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 0px 0px 3px 3px;
+    }
+    .hide {
+      display: none;
+    }
   </style>
 </head>
 
@@ -45,15 +77,21 @@
     <p><a href="#">05</a></p>
   </div>
   <div class="break"></div>
+
   <div id="tabs">
+    <ul>
+      <li class="active">Panel1</li>
+      <li>Panel 2</li>
+      <li>Panel 3</li>
+    </ul>
     <div id="panel1">
-
+    <p>Panel 1<br>Asymmetrical authentic synth, meditation 8-bit poutins helvetica shoreditch food truck. IPhone asymmetrical ethical microdosing, crucifix squid PBR&B hot chicken subway tile man bun af trust fund tacos flexitarian. Kickstarter flannel messenger bag, food truck chartreuse cred ethical vice letterpress activated charcoal ennui celiac meh venmo. Fingerstache beard selvage actually cliche, coloring book gluten-free gastropub ennui snackwave wayfarers VHS vice la croix austin. Williamsburg af four dollar toast hot chicken, shabby chic coloring book aesthetic keffiyeh knausgaard raw denim crucifix prism. Chicharrones gentrify meggings tofu, neutra next level +1. Occupy affogato glossier raclette.</p>
     </div>
-    <div id="panel2">
-
+    <div id="panel2" class="hide">
+<p>Panel 2<br>utine microdosing migas helvetica shoreditch food truck. IPhone asymmetrical ethical microdosing, crucifix squid PBR&B hot chicken subway tile man bun af trust fund tacos flexitarian. Kickstarter flannel messenger bag, food truck chartreuse cred ethical vice letterpress activated charcoal ennui celiac meh venmo. Fingerstache beard selvage actually cliche, coloring book gluten-free gastropub ennui snackwave wayfarers VHS vice la croix austin. Williamsburg af four dollar toast hot chicken, shabby chic coloring book aesthetic keffiyeh knausgaard raw denim crucifix prism. Chicharrones gentrify meggings tofu, neutra next level +1. Occupy affogato glossier raclette.</p>
     </div>
-    <div id="panel3">
-
+    <div id="panel3" class="hide">
+<p>Panel 3<br>Asymmetrical authentic s shabby chic coloring book aesthetic keffiyeh knausgaard raw denim crucifix prism. Chicharrones gentrify meggings tofu, neutra next level +1. Occupy affogato glossier raclette.</p>
     </div>
   </div>
   <!-- jQuery Min CDN -->
