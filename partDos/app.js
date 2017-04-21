@@ -20,49 +20,49 @@ $(function() {
     $('#tabs ul li:first-child').addClass('active');
     $('#tabs ul li:nth-child(2)').removeClass('active');
     $('#tabs ul li:nth-child(3)').removeClass('active');
-    $('#panel1').removeClass('hide');
-    $('#panel2').addClass('hide');
-    $('#panel3').addClass('hide');
+    $('#panel1').show();
+    $('#panel2').hide();
+    $('#panel3').hide();
   });
   $('#tabs ul li:nth-child(2)').on('click', function() {
     $('#tabs ul li:nth-child(1)').removeClass('active');
     $('#tabs ul li:nth-child(2)').addClass('active');
     $('#tabs ul li:nth-child(3)').removeClass('active');
-    $('#panel1').addClass('hide');
-    $('#panel2').removeClass('hide');
-    $('#panel3').addClass('hide');
+    $('#panel1').hide();
+    $('#panel2').show();
+    $('#panel3').hide();
   });
   $('#tabs ul li:nth-child(3)').on('click', function() {
     $('#tabs ul li:nth-child(1)').removeClass('active');
     $('#tabs ul li:nth-child(2)').removeClass('active');
     $('#tabs ul li:nth-child(3)').addClass('active');
-    $('#panel1').addClass('hide');
-    $('#panel2').addClass('hide');
-    $('#panel3').removeClass('hide');
+    $('#panel1').hide();
+    $('#panel2').hide();
+    $('#panel3').show();
   });
   // Accordian
   $('#accordion h3:first-child').on('click', function() {
     $('#accordion h3:first-child').addClass('active');
     $('#accordion h3:nth-child(2)').removeClass('active');
     $('#accordion h3:nth-child(3)').removeClass('active');
-    $('#acPanel1Contents').removeClass('hide');
-    $('#acPanel2Contents').addClass('hide');
-    $('#acPanel3Contents').addClass('hide');
+    $('#acPanel1Contents').show();
+    $('#acPanel2Contents').hide();
+    $('#acPanel3Contents').hide();
   });
   $('#accordion h3:nth-of-type(2)').on('click', function() {
     $('#accordion h3:first-of-type').removeClass('active');
     $('#accordion h3:nth-of-type(2)').addClass('active');
     $('#accordion h3:nth-of-type(3)').removeClass('active');
-    $('#acPanel1Contents').addClass('hide');
-    $('#acPanel2Contents').removeClass('hide');
-    $('#acPanel3Contents').addClass('hide');
+    $('#acPanel1Contents').hide();
+    $('#acPanel2Contents').show();
+    $('#acPanel3Contents').hide();
   });
   $('#accordion h3:nth-of-type(3)').on('click', function() {
     $('#accordion h3:first-of-type').removeClass('active');
     $('#accordion h3:nth-of-type(2)').removeClass('active');
     $('#accordion h3:nth-of-type(3)').addClass('active');
-    $('#acPanel1Contents').addClass('hide');
-    $('#acPanel2Contents').addClass('hide');
-    $('#acPanel3Contents').removeClass('hide');
+    $('#acPanel1Contents').hide();
+    $('#acPanel2Contents').hide();
+    $('#acPanel3Contents').show();
   });
 });
