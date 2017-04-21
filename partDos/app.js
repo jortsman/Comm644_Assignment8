@@ -1,4 +1,5 @@
 $(function() {
+  // Slider
   $('#counter p:first-of-type').on('click', function() {
     $('#slider').css("background-image", "url('img/1.jpeg')");
   });
@@ -14,6 +15,7 @@ $(function() {
   $('#counter p:last-of-type').on('click', function() {
     $('#slider').css("background-image", "url('img/5.jpg')");
   });
+  // Tabs
   $('#tabs ul li:first-child').on('click', function() {
     $('#tabs ul li:first-child').addClass('active');
     $('#tabs ul li:nth-child(2)').removeClass('active');
