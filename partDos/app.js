@@ -49,18 +49,18 @@ $(function() {
     $('#acPanel2Contents').addClass('hide');
     $('#acPanel3Contents').addClass('hide');
   });
-  $('#accordion h3:nth-child(2)').on('click', function() {
-    $('#accordion h3:first-child').removeClass('active');
-    $('#accordion h3:nth-child(2)').addClass('active');
-    $('#accordion h3:nth-child(3)').removeClass('active');
+  $('#accordion h3:nth-of-type(2)').on('click', function() {
+    $('#accordion h3:first-of-type').removeClass('active');
+    $('#accordion h3:nth-of-type(2)').addClass('active');
+    $('#accordion h3:nth-of-type(3)').removeClass('active');
     $('#acPanel1Contents').addClass('hide');
     $('#acPanel2Contents').removeClass('hide');
     $('#acPanel3Contents').addClass('hide');
   });
-  $('#accordion h3:nth-child(3)').on('click', function() {
-    $('#accordion h3:first-child').removeClass('active');
-    $('#accordion h3:nth-child(2)').removeClass('active');
-    $('#accordion h3:nth-child(3)').addClass('active');
+  $('#accordion h3:nth-of-type(3)').on('click', function() {
+    $('#accordion h3:first-of-type').removeClass('active');
+    $('#accordion h3:nth-of-type(2)').removeClass('active');
+    $('#accordion h3:nth-of-type(3)').addClass('active');
     $('#acPanel1Contents').addClass('hide');
     $('#acPanel2Contents').addClass('hide');
     $('#acPanel3Contents').removeClass('hide');
