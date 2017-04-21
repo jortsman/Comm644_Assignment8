@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slideshow</title>
+  <style>
+    #slider {
+      display: block;
+      width: 600px;
+      height: 200px;
+      overflow: hidden;
+      background-image: url('img/1.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      box-sizing: border-box;
+    }
+    #counter p {
+      display: inline-block;
+      font-size: 20px;
+      color: light-blue;
+    }
+    #counter p:not(:first-of-type) {
+      margin-left: 20px;
+    }
+    #counter p:hover {
+      color: dark-blue;
+    }
+    .break {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="slider"></div>
+  <div id="counter">
+    <p><a href="#">01</a></p>
+    <p><a href="#">02</a></p>
+    <p><a href="#">03</a></p>
+    <p><a href="#">04</a></p>
+    <p><a href="#">05</a></p>
+  </div>
+  <div class="break"></div>
+  <div id="tabs">
+    <div id="panel1">
+
+    </div>
+    <div id="panel2">
+
+    </div>
+    <div id="panel3">
+
+    </div>
+  </div>
+  <!-- jQuery Min CDN -->
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Custom Js -->
+  <script src="slideshow.js" charset="utf-8"></script>
+</body>
+
+</html>
